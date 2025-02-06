@@ -23,7 +23,6 @@ export const sendTransactionTool: ToolConfig<SendTransactionArgs> = {
           value: {
             type: "string",
             description: "The amount of SUI to send",
-            optional: true,
           }
         },
         required: ["to", "value"],
@@ -44,7 +43,6 @@ async function sendTransaction({
   value,
 }: SendTransactionArgs) {
   try {
-    // Creating a Viem wallet client instance
     const walletClient = createSuiWalletClient();
     const client = new SuiClient({
       url: walletClient.network.toString(),

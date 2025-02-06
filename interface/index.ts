@@ -22,3 +22,10 @@ export interface SendTransactionArgs {
   value?: string;
   
 }
+
+
+export interface MakeFlashLoanArgs {
+ toBorrowCoin: string;
+ valueToBorrow?: string;
+
+}
