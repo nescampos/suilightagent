@@ -39,7 +39,7 @@
    Create a `.env` file in the root directory and add your OpenAI API key and wallet private key:
    ```plaintext
    OPENAI_API_KEY=your_openai_api_key
-   WALLET_PRIVATE_KEY=your_wallet_private_key
+   WALLET_PRIVATE_KEY=your_sui_mnemonic
    SUI_NETWORK=devnet|testnet|mainnet
    ASSISTANT_NAME=eg: Darth Vader
    ```
